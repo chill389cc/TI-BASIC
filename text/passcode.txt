@@ -1,0 +1,55 @@
+:0:Asm(prgmONBLOCK
+:ClrHome
+:ClrDraw
+:AxesOff
+:GridOff
+:CoordOff
+:BackgroundOn White
+:DelVar {Y0}DelVar {Y1}DelVar {Y2}DelVar {Y3}DelVar {Y4}DelVar {Y5}DelVar {Y6}DelVar {Y7}DelVar {Y8}DelVar {Y9}DelVar Str3DelVar Str4
+:Xmin->Q
+:Xmax->R
+:Ymin->S
+:Ymax->T
+:0->Xmin
+:264->Xmax
+:0->Ymin
+:164->Ymax
+:Line(66,41,198,41,Navy
+:Line(198,41,198,123,Navy
+:Line(198,123,66,123,Navy
+:Line(66,123,66,41,Navy
+:TextColor(LtBlue
+:Text(50,90,"Starting Up!":TextColor(Green
+:Text(65,90,"TI-84 PSCE"
+:TextColor(Red
+:Text(80,90,"By Caleb Hill"
+:TextColor(Orange
+:For(A,1,40
+: Text(95,90,"Formating..."
+:End
+:For(A,1,40
+: Text(95,90,"Customizing..."
+:End
+:For(A,1,40
+: Text(95,90,"Finishing... "
+:End
+:Q->Xmin
+:R->Xmax
+:S->Ymin
+:T->Ymax
+:Lbl 1
+:ClrHome
+:Lbl 2
+:"1111"->Str4
+:Output(10,1,"Note: Expect BREAK Error"
+:Input "Password:",Str3
+:If Str3=Str4
+:Then
+: Goto E
+: Else
+: Goto 2
+: Lbl E
+: DelVar Str3DelVar Str4
+: ClrHome
+: 1:Asm(prgmONBLOCK
+: Stop

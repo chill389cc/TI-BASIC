@@ -1,0 +1,59 @@
+:5->dim(|LBDAY
+:If |LBDAY(1)=2121212:Goto G9
+:2121212->|LBDAY(1)
+:ClrHome
+:Disp "It seems this is your 1st","Time! Please Enter your","Birthday:","Remember: This is Next","Years Date!","(Type Values in #`s)
+:Input "Month:",A
+:Input "Day:",B
+:Output(10,1,"Last 2 digits only!
+:Input "Year:",C
+:A->|LBDAY(2
+:B->|LBDAY(3
+:C->|LBDAY(4
+:Lbl G9
+:|LBDAY(2)->A
+:|LBDAY(3)->B
+:|LBDAY(4)->C
+:SetUpEditor
+:getDate->L1
+:L1(1)-2000->F
+:L1(2)->D
+:L1(3)->E
+:ClrHome
+:Menu("Days Until Birthday","Check!",BR,"Change B-Day",SB,"Set Date",SD,"Quit",X
+:Lbl BR
+:A+(B/100)+(C/10000)->G
+:D+(E/100)+(F/10000)->H
+:dbd(H,G)->I
+:Disp "There Are...",I,"Days Until your B-Day!
+:Output(10,1,"By Caleb Hill
+:Pause
+:Goto G9
+:Lbl SB
+:Disp "Enter Values in #`s","Remember, This is Next","Years Date!
+:Input "Month:",A
+:Input "Day:",B
+:Output(10,1,"Last 2 Digits only
+:Input "Year:",C
+:A->|LBDAY(2
+:B->|LBDAY(3
+:C->|LBDAY(4
+:Goto G9
+:Lbl SD
+:Disp "(Type Values in #`s
+:Input "Month:",A
+:Input "Day:",B
+:Output(10,1,"All 4 Digits
+:Input "Year:",C
+:setDate(C,A,B
+:Goto G9
+:Lbl X
+:ClrHome
+:Disp "Calebahill7@gmail.com
+:Disp "Instagram: @Calebahill7
+:Disp "Text: 2085012520
+:Disp "More @ Cemetech.net,
+:Disp "Ticalc.org, & My Website @
+:Disp "is.gd/Chillcakecalcs
+:Disp "(C) 2015
+:Pause

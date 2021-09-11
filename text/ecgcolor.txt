@@ -1,0 +1,28 @@
+:FnOff
+:264->Xmax
+:0->Xmin
+:82->Ymax
+:~82->Ymin
+:AxesOff:GridOff:BackgroundOn 12
+:Lbl L
+:1->N
+:ClrDraw
+:0->B
+:0->A
+:randInt(1,82->D
+:4->C
+:For(theta,1,53
+: If getKey:Goto H
+: N*D->E
+: Line(A,B,C,E,1,14
+: C->A
+: E->B
+: C+5->C
+: randInt(1,82->D
+: N*~1->N
+:End
+:Goto L
+:Lbl H
+:ClrDraw
+:BackgroundOff
+:Disp

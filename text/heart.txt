@@ -1,0 +1,13 @@
+:For(A,1,2
+: GraphColor(A,13
+:End
+:"X^(2/3)-sqrt(1-X^^2)->{Y1}
+:"X^(2/3)+sqrt(1-X^^2)->{Y2}
+:~2->Xmin
+:2->Xmax
+:~2->Ymin
+:2->Ymax
+:ClrDraw
+:AxesOff:BackgroundOff
+:Shade({Y1},{Y2},~5,5,1,1,13
+:Pause

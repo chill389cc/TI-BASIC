@@ -1,0 +1,41 @@
+:SetUpEditor
+:ClrHome
+:Input "Amount of Shapes:",theta
+:If theta<1:Goto X
+:0->X
+:Lbl KK
+:ClrHome
+:X+1->X
+:Output(1,1,"Shape"
+:Output(1,7,X
+:Disp "","Area of Shape"
+:Input "Ai:",A
+:Disp "[xhat]i of Shape"
+:Input "[xhat]i:",C
+:Disp "[yhat]i of Shape"
+:Input "[yhat]i:",D
+:A->L1(X
+:C->L2(X
+:D->L3(X
+:If X!=theta:Goto KK
+:For(A,1,theta
+: L1(A)*L2(A)->L4(A
+: L1(A)*L3(A)->L5(A
+:End
+:sum(L1->Q
+:sum(L4->R
+:sum(L5->S
+:R/Q->X
+:S/Q->Y
+:ClrHome
+:Disp "[xhat]:",X
+:Disp "[yhat]:",Y
+:Pause
+:Disp "Calebahill7@gmail.com
+:Disp "Instagram: @Calebahill7
+:Disp "Text:2085012520
+:Disp "More @ Cemetech.net,
+:Disp "Ticalc.org, & My Website @
+:Disp "is.gd/Chillcakecalcs
+:Disp "(C) 2015
+:Lbl X

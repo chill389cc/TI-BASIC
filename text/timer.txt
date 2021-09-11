@@ -1,0 +1,24 @@
+:ClrHome
+:Disp "Timer by Caleb Hill
+:Input "Seconds:",S
+:startTmr(1->T
+:ClrHome
+:S-checkTmr(T)->A
+:A->B
+:While A
+: Output(1,1,"Timer By Caleb Hill
+: Output(5,8,A
+: While B=A
+: S-checkTmr(T)->B
+: End
+: If gcd(10,A)=10:ClrHome
+: B->A
+:End
+:ClrDraw
+:BackgroundOn 11
+:Repeat getKey
+: Text(72,95,"Timer Done
+: Text(122,80,"Any Quit To Exit
+:End
+:ClrDraw:ClrHome:FnOff
+:Disp "Timer by Caleb Hill

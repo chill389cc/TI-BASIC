@@ -1,0 +1,55 @@
+:Lbl 2
+:ClrHome:5->A:5->B:0->C:0->D
+:Output(1,3,"--PONG by Cal[e]b Hill--
+:Lbl 1
+:Output(V,W,"
+:randInt(3,9->V:randInt(8,12->W:
+:1->M:1->N
+:Output(1,1,C
+:Output(1,26,D
+:If C>D:"bolduparrowbolddownarrow->Str1
+:If C"bolddownarrowbolduparrow->Str1
+:If C=D:"--->Str1
+:Output(1,2,sub(Str1,1,1
+:Output(1,25,sub(Str1,2,1
+:DelVar EDelVar K
+:Repeat K=45 or C=5 or D=5
+: getKey->K
+: If K=21 and A>2:Then:Output(A+1,1,"
+: A-1->A
+: End
+: If K=31 and A<9:Then:Output(A,1,"
+: A+1->A
+: End
+: If K=25 and B>2:Then:Output(B+1,26,"
+: B-1->B
+: End
+: If K=34 and B<9:Then:Output(B,26,"
+: B+1->B
+: End
+: Output(A,1,"|
+: Output(A+1,1,"|
+: Output(B,26,"|
+: Output(B+1,26,"|
+: If not((W=2 and (A=V or A+1=V)) or (W=25 and (B=V or B+1=V))) and (W=2 or W=25)
+: Then
+: If W=25:C+1->C
+: If W=2:D+1->D
+: 2->E
+: End
+: If E=2:Goto 1
+: If W=25 or W=2:N*~1->N
+: If V=2 or V=10:M*~1->M
+: Output(V,W,"
+: V+M->V
+: W+N->W
+: Output(V,W,"theta
+:End
+:If C=5:Output(5,5,"L Play[e]r Won!
+:If D=5:Output(5,5,"R Play[e]r Won!
+:Output(6,5,"To Play Again, hit 1"
+:Repeat K
+: getKey->K
+:End
+:If K=92:Goto 2
+:ClrHome
