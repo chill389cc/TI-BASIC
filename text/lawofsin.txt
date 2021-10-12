@@ -31,11 +31,4 @@
 :Disp "[xhat]:",X
 :Disp "[yhat]:",Y
 :Pause
-:Disp "Calebahill7@gmail.com
-:Disp "Instagram:
-:Disp "Text:20
-:Disp "More @ Cemetech.net,
-:Disp "Ticalc.org, & My Website @
-:Disp "is.gd/Chillcakecalcs
-:Disp "(C) 2015
 :Lbl X

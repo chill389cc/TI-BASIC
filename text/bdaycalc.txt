@@ -49,11 +49,4 @@
 :Goto G9
 :Lbl X
 :ClrHome
-:Disp "Calebahill7@gmail.com
-:Disp "Instagram: @Calebahill7
-:Disp "Text: 2085012520
-:Disp "More @ Cemetech.net,
-:Disp "Ticalc.org, & My Website @
-:Disp "is.gd/Chillcakecalcs
-:Disp "(C) 2015
 :Pause
